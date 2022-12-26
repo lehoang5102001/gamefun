@@ -1,0 +1,172 @@
+/******************* Reset CSS *******************/
+:root {
+  --background-color: #058ECE;
+  --orange-color: #FC9A40;
+  --while-color: #FBFBFB;
+  --box-color: #0180BB;
+  --black-color: #000;
+  --text-shadow: rgb(0,0,0,25%)
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+body {
+  font-family: Khand;
+  font-size: 16px;
+  line-height: 1.2em;
+  background-color: var(--while-color);	
+}
+img {
+	max-width: 100%;
+  height: auto;
+}
+p{
+  color: var(--while-color);
+  font-size: 18px;
+  font-family: JetBrains Mono;
+  font-weight: 400;
+  margin-top: 18px;
+  line-height: 35px;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.overflow {
+	overflow: hidden;
+}
+.container_center {
+	max-width: 1800px;
+	margin: 0 auto;
+	padding: 0 15px;
+	width: 100%;
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+@media only screen and (max-width: 1800px) {
+	.container_center {
+		max-width: 1400px;
+	}
+}
+@media only screen and (max-width: 1600px) {
+	.container_center {
+		max-width: 1200px;
+	}
+  .content {
+    width: 910px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+	.container_center {
+		max-width: 991px;
+	}
+  .content {
+    width: 840px;
+  }
+}
+@media only screen and (max-width: 992px) {
+	.container_center {
+		max-width: 768px;
+	}
+  .content {
+    width: 640px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 15px;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+	.container_center {
+		max-width: 576px;
+	}
+  .content {
+    width: 490px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 25px;
+  }
+}
+@media only screen and (max-width: 576px) {
+	.container_center {
+		max-width: 490px;
+	}
+  .content {
+    width: 400px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+	.container_center {
+		max-width: 400px;
+	}
+  .content {
+    width: 350px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+	.container_center {
+		max-width: 400px;
+	}
+  .content {
+    width: 350px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 376px) {
+	.container_center {
+		max-width: 320px;
+    padding: 0;
+	}
+  .content {
+    width: 300px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 320px) {
+	.container_center {
+		max-width: 300px;
+    padding: 0;
+	}
+  .content {
+    width: 290px;
+  }
+  p {
+    font-size: 14px;
+    margin-top: 0;
+    line-height: 20px;
+  }
+}
+/*******************End Reset CSS *******************/

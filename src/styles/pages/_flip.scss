@@ -1,0 +1,188 @@
+.flip{
+  background-color: var(--background-color);
+  padding-top: 60px;
+  .flip__header {
+    margin-top: 165px;
+    .flip__header-content {
+      text-align: center;
+      .content__text{
+        letter-spacing: 2px;
+        text-shadow: 4px 4px 1px var(--text-shadow);
+        text-transform: uppercase;
+        font-size: 56px;
+        color: var(--while-color);
+        font-weight: 700;
+        line-height: 70px;
+      }
+    }
+  }
+  .flip__content {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    .flip__content-broad {
+      background-color: var(--while-color);
+      height: auto;
+      border-radius: 20px;
+      padding: 20px;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      .broad__list {
+        width: 70%;
+        padding-top: 10px;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        .broad__list-item {
+          position: relative;
+          margin: 0 5px;
+          width: calc((100% / 6) - 10px);
+          .item-front {
+            backface-visibility: hidden;
+            transform: rotateY(0deg);
+            opacity: 1;
+          }
+          .item-back {
+            position: absolute;
+            top: 0;
+            opacity: 0;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            transition: 0.5s;
+          }
+        }
+        .flipImage {
+          transform-style: preserve-3d;
+          .item-front {
+            transform: rotateY(-180deg);
+            transition: 0.7s;
+            opacity: 0;
+          }
+          .item-back {
+            transform: rotateY(0deg);
+            transition: 0.7s;
+            opacity: 1;
+          }
+        }
+      }
+      .play-again {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        color: var(--box-color);
+        font-weight: 700;
+        position:absolute;
+        top: 50%;
+        left: 0;
+        i {
+          margin-right: 20px;
+          font-size: 35px;
+          color: var(--orange-color);
+          &:hover {
+            color: var(--box-color);
+          }
+        }
+      }
+      .broad__img {
+        width: 70%;
+      }
+      .broad__scores {
+        width: 30%;
+        background-color: var(--box-color);
+        border-radius: 20px;
+        padding: 20px;
+        margin-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        .broad__scores-text {
+          font-size: 54px;
+          color: var(--orange-color);
+          line-height: 70px;
+          font-weight: 600;
+        }
+        .broad__score-number {
+          padding-left: 20px;
+          font-size: 46px;
+          color: var(--while-color);
+          line-height: 70px;
+        }
+        .broad__score-countdown {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          .countdown__timer {
+            width: 100%;
+            color: var(--while-color);
+            font-size: 46px;
+            line-height: 70px;
+            text-align: center;
+          }
+          .countdown__button {
+            width: 70px;
+            height: 70px;
+            background-color: var(--orange-color);
+            border-radius: 50%;
+            border: none;
+            i {
+              color: var(--while-color);
+              font-size: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.hide {
+  opacity: 0;
+  transition: 2s;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .flip {
+    .flip__header {
+      margin-top: 100px;
+      .flip__header-content {
+        .content__text {
+          font-size: 50px;
+        }
+      }
+    }
+    .flip__content {
+      .flip__content-broad {
+        .broad__list {
+          .broad__list-item {
+            width: calc((100% / 4) - 10px);
+          }
+        }
+        .broad__scores {
+          .broad__scores-text {
+            font-size: 40px;
+          }
+          .broad__score-number {
+            font-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 576px) {
+}
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (max-width: 376px) {
+}
+@media only screen and (max-width: 320px) {
+}
+
